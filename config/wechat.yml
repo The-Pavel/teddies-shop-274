@@ -1,0 +1,9 @@
+default: &default
+  appid: <%= ENV['WECHAT_APP_ID'] %>
+  secret: <%= ENV['WECHAT_SECRET'] %>
+  token:  <%= ENV['WECHAT_TOKEN'] %>
+
+  trusted_domain_fullname: <%= ENV['WECHAT_TRUSTED_DOMAIN_FULLNAME'] %>
+
+development:
+  <<: *default

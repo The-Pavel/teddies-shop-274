@@ -1,0 +1,16 @@
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title">Teddies Shop</h1>
+        <p class="page__desc">present by weui for mobile</p>
+    </div>
+    <div class="weui-grids">
+    <% @teddies.each do |teddy| %>
+        <%= link_to weweb_path(teddy), class: 'weui-grid' do %>
+            <div class="weui-grid__icon">
+                <%= image_tag(teddy.photo_url) %>
+            </div>
+            <p class="weui-grid__label"><%= teddy.name -%></p>
+        <% end %>
+    <% end %>
+    </div>
+</div>

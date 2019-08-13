@@ -1,0 +1,13 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title><%= yield(:title).presence || "Teddies Shop" %></title>
+  <%= javascript_tag "http://res.wx.qq.com/open/js/jweixin-1.1.0.js" %>
+  <%= stylesheet_link_tag 'weui-rails', media: 'all' %>
+</head>
+<body>
+  <%= wechat_config_js debug: false, api: %w(hideMenuItems) %>
+  <%= yield %>
+</body>
+</html>

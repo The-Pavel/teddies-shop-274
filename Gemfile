@@ -14,6 +14,12 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem 'coffee-script'
+gem 'wechat'
+gem 'weui-rails'
+gem 'money-rails'
+gem 'wx_pay'
+gem 'rqrcode'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
